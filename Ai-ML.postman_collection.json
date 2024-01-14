@@ -1,0 +1,216 @@
+{
+	"info": {
+		"_postman_id": "94de3227-c71c-44f9-bc89-10012be053e0",
+		"name": "Ai-ML",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10411842"
+	},
+	"item": [
+		{
+			"name": "api_database",
+			"item": [
+				{
+					"name": "list_tables",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://0.0.0.0:8000/v1.0/list_tables",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8000",
+							"path": [
+								"v1.0",
+								"list_tables"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "api_simulation",
+			"item": [
+				{
+					"name": "list_simulations",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://0.0.0.0:8000/v1.0/list_simulations",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8000",
+							"path": [
+								"v1.0",
+								"list_simulations"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create_simulation",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"machine_name\": \"1\",\n    \"model_name\": \"1\",\n    \"simulation_name\": \"simulation_1\"\n  \n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://0.0.0.0:8000/v1.0/create_simulation",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8000",
+							"path": [
+								"v1.0",
+								"create_simulation"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "filter_simulation_by_status",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://0.0.0.0:8000/v1.0/filter_simulations_by_status?status_name=finished",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8000",
+							"path": [
+								"v1.0",
+								"filter_simulations_by_status"
+							],
+							"query": [
+								{
+									"key": "status_name",
+									"value": "finished"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "order_by_simulation",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://0.0.0.0:8000/v1.0/order_simulations?order_by=created_at&sort=asc",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8000",
+							"path": [
+								"v1.0",
+								"order_simulations"
+							],
+							"query": [
+								{
+									"key": "order_by",
+									"value": "created_at"
+								},
+								{
+									"key": "sort",
+									"value": "asc"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "api_model",
+			"item": [
+				{
+					"name": "list_models",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://0.0.0.0:8000/v1.0/list_models",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8000",
+							"path": [
+								"v1.0",
+								"list_models"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "api_machines",
+			"item": [
+				{
+					"name": "list_machines",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://0.0.0.0:8000/v1.0/list_machines",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8000",
+							"path": [
+								"v1.0",
+								"list_machines"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

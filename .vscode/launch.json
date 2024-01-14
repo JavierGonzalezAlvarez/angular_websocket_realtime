@@ -1,0 +1,47 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "V.Env: Api Entorno Virtual",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/api_web/api.py",
+      "justMyCode": true,
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "env": {
+        "HOST": "localhost",
+        "PYTHONUNBUFFERED": "1",
+        "PYTHONPATH": "${workspaceFolder}"
+      },
+    },
+    {
+      "name": "V.Env: Create tables",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/database/create_data_tables.py",
+      "justMyCode": true,
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "env": {
+        "HOST": "localhost",
+        "PYTHONUNBUFFERED": "1",
+        "PYTHONPATH": "${workspaceFolder}"
+      },
+    },
+    {
+      "name": "V.Env: Insert data in tables",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/database/insert_data_tables.py",
+      "justMyCode": true,
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "env": {
+        "HOST": "localhost",
+        "PYTHONUNBUFFERED": "1",
+        "PYTHONPATH": "${workspaceFolder}"
+      },
+    }  
+  ]
+}
